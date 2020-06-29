@@ -1,0 +1,31 @@
+{
+  "name": "sumantablog/superadmin-postman",
+  "description": "Postman for laravel Superadmin",
+  "type": "library",
+  "keywords": ["laravel-superadmin", "api", "postman"],
+  "homepage": "https://github.com/sumantablog/superadmin-postman",
+  "license": "MIT",
+  "authors": [{
+    "name": "Sumanta Kabiraj",
+    "email": "sumantablog@gmail.com"
+  }],
+  "require": {
+    "php": ">=7.0.0",
+    "sumantablog/laravel-superadmin": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sumantablog\\Admin\\ApiTester\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sumantablog\\Admin\\ApiTester\\ApiTesterServiceProvider"
+      ]
+    }
+  }
+}
